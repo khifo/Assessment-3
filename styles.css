@@ -64,4 +64,11 @@ img {
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
-	
+  }
+
+.favorite {
+	display: block;
+	width: 100%;
+	background-color: yellow;
+	padding: 14px 28px;
+}
