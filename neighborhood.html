@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <link href="neighborhood.html" rel="document">
-    <title>My Neighborhood</title>
+    <link href="styles.css" rel="stylesheet"
 </head>
 <body>
-    
+    <h1>My Neighborhood</h1>
+    <p>The neighborhood I live is in Pleasant Grove, UT. There are a lot of townhomes and apartments. This part of the city in still in development with housing and stores. It is close to the freeway which is convenient for traveling to other cities. There are many food places and stores to go to nearby. Also, there are many tech startups and companies to work for.</p>
+    <h2>Local restaurants and places</h2>
+    <ul>
+    <li><a href="https://slimchickens.com/?olonwp=JjBtp_vMLk25gkYh_bnoiQ">Slim Chickens</a></li>
+    <li><a href="https://www.caferio.com/locations/pleasant-grove">Cafe Rio</a></li>
+    <li><a href="https://www.macu.com/branch-locations/utah/utah-county/pleasant-grove-branch">Mountain America</a></li>
+    <li><a href="https://aseaglobal.com/">Asea Global</a></li>
+    <li><a href="https://www.doterra.com/US/en">Doterra</a></li>
+    <li><a href="https://summitpizzaco.com/">Summit Pizza</a></li>
+    </ul>
+    <button id='restaurant-button'>Restaurant recommendation</button>
+    <script>
+        const button = document.getElementById('restaurant-button');
+  function getRecommendation () {
+	const restaurants = ["Slim Chickens", "Cafe Rio","Summit Pizza", "Kolache Krave","Mo Bettahs","Costa Vida"]; 
+	const recommendation = restaurants[Math.floor(Math.random()*restaurants.length)];
+	console.log()(`Try ${recommendation}.`);
+    button.addEventListener("click", function() {
+	getRecommendation();
+  }); 
+};
+    </script>
 </body>
 </html>
